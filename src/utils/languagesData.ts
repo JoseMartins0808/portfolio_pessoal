@@ -1,6 +1,7 @@
 // there is 9 languages: portuguese, english, spanish, japanese, ukrainian, german, français, russian, chinese.
 export const language = {
     portuguese: {
+        title: "Idioma",
         titles: {
             portuguese: "português",
             english: "inglês",
@@ -8,7 +9,7 @@ export const language = {
             japanese: "japonês",
             ukrainian: "ucraniano",
             german: "alemão",
-            fançais: "francês",
+            french: "francês",
             russian: "russo",
             chinese: "chinês"
         },
@@ -108,11 +109,15 @@ export const language = {
             },
             jpa: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven é uma ferramenta de gerenciamento e compreensão de projetos de software. Com base no conceito de modelo de objeto de projeto (POM), o Maven pode gerenciar a construção, os relatórios e a documentação de um projeto a partir de uma informação central."
             }
         }
 
     },
     english: {
+        title: "Language",
         titles: {
             portuguese: "portuguese",
             english: "english",
@@ -120,7 +125,7 @@ export const language = {
             japanese: "japanese",
             ukrainian: "ukrainian",
             german: "german",
-            fançais: "french",
+            french: "french",
             russian: "russian",
             chinese: "chinese"
         },
@@ -217,11 +222,15 @@ export const language = {
             },
             jpa: {
                 description: "Jakarta Persistence (JPA; formerly Java Persistence API) is a Jakarta EE application programming interface specification that describes the management of relational data in enterprise Java applications. A persistence entity is a lightweight Java class with its state typically persisted to a table in a relational database. Instances of such an entity correspond to individual rows in the table. Entities typically have relationships with other entities, and these relationships are expressed through object/relational mapping (ORM) metadata. This metadata may be specified directly in the entity class file by using annotations or in a separate XML descriptor file distributed with the application."
+            },
+            maven: {
+                description: "Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information."
             }
         }
 
     },
     spanish: {
+        title: "Idioma",
         titles: {
             portuguese: "portugués",
             english: "inglés",
@@ -229,7 +238,7 @@ export const language = {
             japanese: "japonés",
             ukrainian: "ucranio",
             german: "alemán",
-            fançais: "francés",
+            french: "francés",
             russian: "ruso",
             chinese: "chino"
         },
@@ -329,11 +338,15 @@ export const language = {
             },
             jpa: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven es una herramienta de comprensión y gestión de proyectos de software. Basado en el concepto de modelo de objetos de proyecto (POM), Maven puede gestionar la construcción, los informes y la documentación de un proyecto desde una pieza de información central."
             }
         }
 
     },
     japanese: {
+        title: "言語",
         titles: {
             portuguese: "ポルトガル語",
             english: "英語",
@@ -341,7 +354,7 @@ export const language = {
             japanese: "日本語",
             ukrainian: "ウクライナ語",
             german: "ドイツ人",
-            fançais: "フランス語",
+            french: "フランス語",
             russian: "ロシア",
             chinese: "中国語"
         },
@@ -441,11 +454,15 @@ export const language = {
             },
             jpa: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven は、ソフトウェア プロジェクトの管理および理解ツールです。プロジェクト オブジェクト モデル (POM) の概念に基づいて、Maven はプロジェクトのビルド、レポート、ドキュメントを中心的な情報から管理できます。"
             }
         }
 
     },
     ukrainian: {
+        title: "Мова",
         titles: {
             portuguese: "португальська",
             english: "англійська",
@@ -453,7 +470,7 @@ export const language = {
             japanese: "Японський",
             ukrainian: "українська",
             german: "Німецький",
-            fançais: "французька",
+            french: "французька",
             russian: "російський",
             chinese: "китайський"
         },
@@ -553,11 +570,15 @@ export const language = {
             },
             jpa: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven — це програмний інструмент для керування та розуміння проектів. Базуючись на концепції об’єктної моделі проекту (POM), Maven може керувати збіркою проекту, звітністю та документацією з центральної частини інформації."
             }
         }
 
     },
     german: {
+        title: "Sprache",
         titles: {
             portuguese: "portugiesisch",
             english: "englisch",
@@ -565,7 +586,7 @@ export const language = {
             japanese: "japanisch",
             ukrainian: "ukrainisch",
             german: "deutsch",
-            fançais: "französisch",
+            french: "französisch",
             russian: "russisch",
             chinese: "chinesisch"
         },
@@ -665,11 +686,15 @@ export const language = {
             },
             jpa: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven ist ein Software-Projektmanagement- und Verständnistool. Basierend auf dem Konzept eines Projektobjektmodells (POM) kann Maven die Erstellung, Berichterstattung und Dokumentation eines Projekts von einer zentralen Informationseinheit aus verwalten."
             }
         }
 
     },
-    français: {
+    french: {
+        title: "Langue",
         titles: {
             portuguese: "portugais",
             english: "anglais",
@@ -677,7 +702,7 @@ export const language = {
             japanese: "japonais",
             ukrainian: "ukrainien",
             german: "allemand",
-            fançais: "français",
+            french: "français",
             russian: "russe",
             chinese: "chinois"
         },
@@ -777,11 +802,15 @@ export const language = {
             },
             jpa: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven est un outil de gestion et de compréhension de projets logiciels. Basé sur le concept de modèle objet de projet (POM), Maven peut gérer la construction, le reporting et la documentation d'un projet à partir d'une information centrale."
             }
         }
 
     },
     russian: {
+        title: "Язык",
         titles: {
             portuguese: "португальский",
             english: "Английский",
@@ -789,7 +818,7 @@ export const language = {
             japanese: "Японский",
             ukrainian: "украинец",
             german: "Немецкий",
-            fançais: "Французский",
+            french: "Французский",
             russian: "Русский",
             chinese: "Китайский"
         },
@@ -889,11 +918,15 @@ export const language = {
             },
             jpa: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven — это инструмент управления и анализа программных проектов. Основываясь на концепции объектной модели проекта (POM), Maven может управлять сборкой проекта, отчетами и документацией из центральной части информации."
             }
         }
 
     },
     chinese: {
+        title: "语言",
         titles: {
             portuguese: "葡萄牙语",
             english: "英语",
@@ -901,7 +934,7 @@ export const language = {
             japanese: "日本人",
             ukrainian: "乌克兰",
             german: "德语",
-            fançais: "法语",
+            french: "法语",
             russian: "俄语",
             chinese: "中国人"
         },
@@ -989,6 +1022,9 @@ export const language = {
             },
             mySql: {
                 description: ""
+            },
+            maven: {
+                description: "Apache Maven 是一个软件项目管理和理解工具。基于项目对象模型 (POM) 的概念，Maven 可以通过中央信息来管理项目的构建、报告和文档。"
             }
         }
 

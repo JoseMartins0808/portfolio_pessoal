@@ -16,7 +16,7 @@ export const Navbar = styled("nav", {
     display: "flex",
     justifyContent: "space-between",
     "@mobile": {
-        flexDirection: "column"
+      flexDirection: "column"
     },
   },
 });
@@ -62,6 +62,22 @@ export const NavbarLinks = styled(Flex, {
 });
 
 export const NavbarMobileArea = styled("div", {
-   display: "flex",
-   justifyContent: "space-between"
+  display: "flex",
+  justifyContent: "space-between"
 });
+
+export const NavbarDropdownMenu = styled("div", {
+  position: "absolute",
+  top: "90px",
+  right: "0",
+  width: "20vw",
+  height: "50vh",
+  backgroundColor: "$grey1",
+  span: {
+    fontFamily: "cursive"
+  },
+
+  // > "span" {
+
+  // }
+})

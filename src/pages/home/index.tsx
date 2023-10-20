@@ -24,27 +24,31 @@ import {
   ProjectAreaWrapperColumns,
 } from "./style";
 
+import { useContext } from "react";
+import { AppContext } from "./../../providers/appProvider";
+
 
 export const Home = (): JSX.Element => {
+
+  const { languageText } = useContext(AppContext);
+
   return (
     <main>
       <Header>
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+              {languageText.apresentationTitle}
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              {languageText.apresentationDescription}
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">
-                Projetos
+                {languageText.apresentationButtons[0]}
               </Button>
               <Button as="a" href="#tecnologias" type="btLink" color="grey5">
-                Tecnologias
+                {languageText.apresentationButtons[1]}
               </Button>
             </HeaderButtonsArea>
           </HeaderContent>
@@ -53,7 +57,7 @@ export const Home = (): JSX.Element => {
       <StackSection id="tecnologias">
         <Container>
           <Text as="h4" type="heading3" color="grey1">
-            Ferramentas que domino (clique para saber mais)
+            {languageText.stacksTitle}
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (

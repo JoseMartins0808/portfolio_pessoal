@@ -13,7 +13,7 @@ import {
   SiTypescript, SiTailwindcss, SiSass, SiStitcher,
   SiNextdotjs, SiExpress, SiNestjs, SiPython, SiDjango, SiJava,
   SiSpringboot, SiJsonwebtokens, SiPostgresql, SiJest, SiMysql,
-  SiSqlite, SiPrisma, SiHibernate
+  SiSqlite, SiPrisma, SiHibernate, SiApachemaven
 } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 
@@ -117,6 +117,11 @@ export const stackData = [
     title: "Spring Boot",
     img: SiSpringboot,
     link: "https://spring.io/projects/spring-boot"
+  },
+  {
+    title: "Apache Maven",
+    img: SiApachemaven,
+    link: "https://maven.apache.org/"
   },
   {
     title: "Json Web Token",
