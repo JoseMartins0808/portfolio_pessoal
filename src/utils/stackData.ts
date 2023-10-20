@@ -4,158 +4,163 @@ import imgJS from "../public/static/img/stack/js.svg";
 import imgNode from "../public/static/img/stack/node.svg";
 import imgStyled from "../public/static/img/stack/styled.svg";
 import imgReact from "../public/static/img/stack/react.svg";
-import { SiTypescript } from "react-icons/si";
+import imgAxios from "../public/static/img/stack/axios.png";
+import imgZod from "../public/static/img/stack/zod.png";
+import imgBcrypt from "../public/static/img/stack/bcrypt.png";
+import imgJpa from "../public/static/img/stack/jpa.jpg";
+
+import {
+  SiTypescript, SiTailwindcss, SiSass, SiStitcher,
+  SiNextdotjs, SiExpress, SiNestjs, SiPython, SiDjango, SiJava,
+  SiSpringboot, SiJsonwebtokens, SiPostgresql, SiJest, SiMysql,
+  SiSqlite, SiPrisma, SiHibernate
+} from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 
 export const stackData = [
   {
     title: "HTML",
     img: imgHTML,
-    link: ""
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
   },
   {
     title: "CSS",
     img: imgCSS,
-    link: ""
+    link: "https://developer.mozilla.org/en-US/docs/Learn/CSS"
   },
   {
-    title: "JS",
+    title: "Java Script",
     img: imgJS,
-    link: ""
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
     title: "Node JS",
     img: imgNode,
-    link: ""
+    link: "https://nodejs.org/en/about"
   },
   {
     title: "Styled Components",
     img: imgStyled,
-    link: ""
+    link: "https://styled-components.com/"
   },
   {
     title: "React",
     img: imgReact,
-    link: ""
+    link: "https://react.dev/"
   },
   {
     title: "TypeScript",
     img: SiTypescript,
-    link: ""
+    link: "https://www.typescriptlang.org/"
   },
   {
     title: "Docker",
     img: FaDocker,
-    link: ""
+    link: "https://www.docker.com/"
   },
   {
     title: "Tailwind Css",
-    img: null,
+    img: SiTailwindcss,
     link: "https://tailwindcss.com/"
   },
   {
     title: "Sass Css",
-    img: null,
+    img: SiSass,
     link: "https://sass-lang.com/"
   },
   {
+    title: "Stitches Css",
+    img: SiStitcher,
+    link: "https://stitches.dev/"
+  },
+  {
     title: "Next Js",
-    img: null,
+    img: SiNextdotjs,
     link: "https://nextjs.org/"
   },
   {
     title: "Zod",
-    img: null,
+    img: imgZod,
     link: "https://zod.dev/"
   },
   {
     title: "Axios",
-    img: null,
+    img: imgAxios,
     link: "https://axios-http.com/ptbr/docs/intro"
   },
   {
-    title: "SOLID",
-    img: null,
-    link: "https://en.wikipedia.org/wiki/SOLID"
-  },
-  {
     title: "Express Js",
-    img: null,
+    img: SiExpress,
     link: "https://expressjs.com/pt-br/"
   },
   {
     title: "Nest Js",
-    img: null,
+    img: SiNestjs,
     link: "https://nestjs.com/"
   },
   {
     title: "Python",
-    img: null,
+    img: SiPython,
     link: "https://www.python.org/"
   },
   {
     title: "Django",
-    img: null,
+    img: SiDjango,
     link: "https://www.djangoproject.com/"
   },
   {
-    title: "",
-    img: null,
+    title: "Java",
+    img: SiJava,
     link: "https://www.java.com/"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "Spring Boot",
+    img: SiSpringboot,
+    link: "https://spring.io/projects/spring-boot"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "Json Web Token",
+    img: SiJsonwebtokens,
+    link: "https://jwt.io/"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "PostgreSQL",
+    img: SiPostgresql,
+    link: "https://www.postgresql.org/"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "Bcrypt",
+    img: imgBcrypt,
+    link: "https://en.wikipedia.org/wiki/Bcrypt"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "Jest Js",
+    img: SiJest,
+    link: "https://jestjs.io/"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "My Sql",
+    img: SiMysql,
+    link: "https://www.mysql.com/"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "Sqlite",
+    img: SiSqlite,
+    link: "https://www.sqlite.org/index.html"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "Prisma ORM",
+    img: SiPrisma,
+    link: "https://www.prisma.io/"
   },
   {
-    title: "",
-    img: null,
-    link: ""
+    title: "Hibernate ORM",
+    img: SiHibernate,
+    link: "https://hibernate.org/orm/"
   },
   {
-    title: "",
-    img: null,
-    link: ""
-  },
-  {
-    title: "",
-    img: null,
-    link: ""
+    title: "JPA",
+    img: imgJpa,
+    link: "https://en.wikipedia.org/wiki/Jakarta_Persistence"
   },
 ];
