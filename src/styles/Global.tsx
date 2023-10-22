@@ -1,5 +1,5 @@
 import { createTheme, globalCss, styled } from "@stitches/react";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 interface GlobalStyleProps {
   children: ReactNode;
@@ -61,6 +61,9 @@ export const globalStyles = globalCss({
 });
 
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
+
+  // const [themeApply, setThemeApply] = useState("theme");
+
   const theme = createTheme({
     colors: {
       brand1: "#5C63ED",
