@@ -24,13 +24,15 @@ import {
   ProjectAreaWrapperColumns,
 } from "./style";
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AppContext } from "./../../providers/appProvider";
-
+import { StackModal } from "@/components/StackModal";
 
 export const Home = (): JSX.Element => {
 
   const { languageText } = useContext(AppContext);
+  const [modalStack, setModalStack] = useState<boolean>(false);
+  const [stackNumber, SetStackNumber] = useState<number | null>(null);
 
   return (
     <main>
@@ -61,8 +63,12 @@ export const Home = (): JSX.Element => {
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (
-              <Stack key={index} title={stack.title} icon={stack.img} />
+              <div onClick={() => SetStackNumber(index)} key={"stack" + index} >
+                <Stack title={stack.title} icon={stack.img}
+                  setModalStack={setModalStack} key={index} />
+              </div>
             ))}
+            {modalStack && <StackModal setModalStack={setModalStack} stackNumber={stackNumber!} />}
           </StackCards>
         </Container>
       </StackSection>
