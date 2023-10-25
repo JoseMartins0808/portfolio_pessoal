@@ -1,5 +1,5 @@
 import { styled } from "../../styles/stitches.config";
-import { Flex, Container } from "../../styles/Global";
+import { Flex, Container, colors } from "../../styles/Global";
 import { Button } from "../../styles/Buttons";
 
 export const Navbar = styled("nav", {
@@ -66,18 +66,111 @@ export const NavbarMobileArea = styled("div", {
   justifyContent: "space-between"
 });
 
-export const NavbarDropdownMenu = styled("div", {
+export const NavbarDropdownMenu = styled("ul", {
+  display: "none",
   position: "absolute",
-  top: "90px",
-  right: "0",
+  top: "40px",
+  right: "-4px",
   width: "20vw",
-  height: "50vh",
-  backgroundColor: "$grey1",
-  span: {
-    fontFamily: "cursive"
+  height: "fit-content",
+  backgroundColor: "$mode",
+  borderRadius: "0.5rem",
+  maxWidth: "200px",
+  padding: "0 .5rem .5rem .5rem",
+
+  "& div": {
+    backgroundColor: "$mode",
+    height: "24px"
   },
 
-  // > "span" {
+  "@mobile": {
+    top: "0"
+  },
+});
 
+export const LanguageItems = styled("li", {
+  padding: "0.5rem",
+  textDecoration: "none",
+  transition: "0.2s ease",
+  borderRadius: "5px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "flex-start",
+
+  "&:hover": {
+    backgroundColor: "$brand1",
+  }
+});
+
+export const LanguageImage = styled("img", {
+  width: "1.5rem",
+  height: "1rem",
+  borderRadius: "20%",
+  marginRight: ".5rem"
+  // "@mobile": {
+  //   width: "2.25rem",
+  //   height: "2.25rem",
   // }
-})
+});
+
+export const NavbarDropdownButton = styled("button", {
+  height: "2.75rem",
+  appearance: "none",
+  background: "$whiteFixed",
+  color: "$grey1",
+  fontWeight: "600",
+  padding: "0 2rem",
+  border: "2px solid $whiteFixed",
+  borderRadius: "$1",
+  cursor: "pointer",
+  fontSize: "1rem",
+  fontFamily: "$texts",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "max-content",
+  position: "relative",
+  variants: {
+    type: {
+      btLink: {
+        background: "transparent",
+        borderColor: "transparent",
+      },
+      // primary: {
+      //   background: "$brand1",
+      //   borderColor: "$brand1",
+      //   color: "$whiteFixed",
+      //   "&:hover": {
+      //     backgroundColor: "$brand2",
+      //     borderColor: "$brand2",
+      //   }
+      // },
+      icon: {
+        borderColor: "$grey5",
+        backgroundColor: "transparent",
+
+        // },
+        // circle: {
+        //   borderColor: "$grey5",
+        //   backgroundColor: "$whiteFixed",
+        //   borderRadius: "50%",
+        //   padding: "0",
+        //   width: "2.75rem",
+        //   height: "2.75rem",
+        //   "&:hover": {
+        //     backgroundColor: "$grey5",
+        //   }
+        // }
+      }
+    },
+    ...colors
+  },
+  // "&:hover .drop-down": {
+  //   backgroundColor: "Purple"
+  // },
+  // [`&:hover #drops`]: {
+  [`&:hover ${NavbarDropdownMenu}`]: {
+    display: "block"
+  },
+});
+

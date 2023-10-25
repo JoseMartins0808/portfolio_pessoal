@@ -10,12 +10,13 @@ import imgBcrypt from "../public/static/img/stack/bcrypt.png";
 import imgJpa from "../public/static/img/stack/jpa.jpg";
 
 import {
-  SiTypescript, SiTailwindcss, SiSass, SiStitcher,
-  SiNextdotjs, SiExpress, SiNestjs, SiPython, SiDjango, SiJava,
+  SiTypescript, SiTailwindcss, SiSass,
+  SiNextdotjs, SiExpress, SiNestjs, SiPython, SiDjango,
   SiSpringboot, SiJsonwebtokens, SiPostgresql, SiJest, SiMysql,
   SiSqlite, SiPrisma, SiHibernate, SiApachemaven
 } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
+import { FaDocker, FaJava } from "react-icons/fa";
+import { RxStitchesLogo } from "react-icons/rx";
 
 export const stackData = [
   {
@@ -81,7 +82,7 @@ export const stackData = [
   {
     stack: "stitches",
     title: "Stitches Css",
-    img: SiStitcher,
+    img: RxStitchesLogo,
     link: "https://stitches.dev/"
   },
   {
@@ -129,7 +130,7 @@ export const stackData = [
   {
     stack: "java",
     title: "Java",
-    img: SiJava,
+    img: FaJava,
     link: "https://www.java.com/"
   },
   {

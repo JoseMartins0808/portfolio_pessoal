@@ -7,7 +7,8 @@ export const ModalWrapper = styled("div", {
     backgroundColor: "rgb(0,0,0,0.5)",
     zIndex: "15",
     height: "100vh",
-    width: "100vw"
+    width: "100vw",
+    backdropFilter: "8px"
 });
 
 export const ModalContainer = styled("div", {

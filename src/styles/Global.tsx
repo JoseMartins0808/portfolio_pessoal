@@ -58,6 +58,7 @@ export const globalStyles = globalCss({
     scrollBehavior: "smooth",
   },
   a: { textDecoration: "none" },
+  li: { listStyle: "none" }
 });
 
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {

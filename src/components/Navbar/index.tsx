@@ -1,4 +1,4 @@
-import { useState, useContext, Ref } from "react";
+import { useState, useContext } from "react";
 import useMedia from "use-media";
 import { userData } from "@/utils/userData";
 
@@ -10,6 +10,9 @@ import {
   NavbarLinks,
   NavbarMobileArea,
   NavbarDropdownMenu,
+  NavbarDropdownButton,
+  LanguageImage,
+  LanguageItems
 } from "./style";
 
 import { FaGithub, FaLinkedinIn, FaBars } from "react-icons/fa";
@@ -17,8 +20,17 @@ import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container } from "@/styles/Global";
 import { AppContext } from "./../../providers/appProvider";
-import useOutClick from "./../../hooks/useOutClick";
 import { language } from "@/utils/languagesData";
+
+import brazilFlag from "../../public/static/img/flags/brazil.png";
+import usaFlag from "../../public/static/img/flags/usa.png";
+import spainFlag from "../../public/static/img/flags/spain.png";
+import japanFlag from "../../public/static/img/flags/japan.png";
+import ukrainFlag from "../../public/static/img/flags/ukrain.jpg";
+import germanFlag from "../../public/static/img/flags/germany.png";
+import franceFlag from "../../public/static/img/flags/france.png";
+import russiaFlag from "../../public/static/img/flags/russia.png";
+import chinaFlag from "../../public/static/img/flags/china.png";
 
 export interface MenuButtonOpen {
   open: Boolean;
@@ -69,14 +81,14 @@ export const NavBar = (): JSX.Element => {
 
 export const NavLinks = (): JSX.Element => {
 
-  const [openLanguageMenu, setOpenLanguageMenu] = useState(false);
+  // const [openLanguageMenu, setOpenLanguageMenu] = useState(false);
   const { languageText, setLanguageText } = useContext(AppContext);
 
-  const menuDropdownRef = useOutClick(() => setOpenLanguageMenu(false));
+  // const menuDropdownRef = useOutClick(() => setOpenLanguageMenu(false));
 
-  function toggleLanguageMenu() {
-    setOpenLanguageMenu(!openLanguageMenu);
-  }
+  // function toggleLanguageMenu() {
+  //   setOpenLanguageMenu(!openLanguageMenu);
+  // }
 
   return (
     <NavbarLinks>
@@ -114,21 +126,31 @@ export const NavLinks = (): JSX.Element => {
           <FaLinkedinIn />
         </Button>
       )}
-      <Button onClick={toggleLanguageMenu}>{languageText.title}</Button>
-      {openLanguageMenu && <NavbarDropdownMenu ref={menuDropdownRef as Ref<HTMLDivElement>}>
-        <span onClick={() => setOpenLanguageMenu(false)}>X</span>
-        <ul>
-          <li onClick={() => setLanguageText(language.portuguese)}>{languageText.titles.portuguese}</li>
-          <li onClick={() => setLanguageText(language.english)}>{languageText.titles.english}</li>
-          <li onClick={() => setLanguageText(language.spanish)}>{languageText.titles.spanish}</li>
-          <li onClick={() => setLanguageText(language.japanese)}>{languageText.titles.japanese}</li>
-          <li onClick={() => setLanguageText(language.ukrainian)}>{languageText.titles.ukrainian}</li>
-          <li onClick={() => setLanguageText(language.german)}>{languageText.titles.german}</li>
-          <li onClick={() => setLanguageText(language.french)}>{languageText.titles.french}</li>
-          <li onClick={() => setLanguageText(language.russian)}>{languageText.titles.russian}</li>
-          <li onClick={() => setLanguageText(language.chinese)}>{languageText.titles.chinese}</li>
-        </ul>
-      </NavbarDropdownMenu>}
-    </NavbarLinks>
+      <NavbarDropdownButton type="icon" aria-label="language"
+      // onClick={toggleLanguageMenu}
+      >{languageText.title}
+        <NavbarDropdownMenu  >
+          <div />
+          <LanguageItems onClick={() => setLanguageText(language.portuguese)}>
+            <LanguageImage src={brazilFlag} /> {languageText.titles.portuguese}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.english)}>
+            <LanguageImage src={usaFlag} /> {languageText.titles.english}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.spanish)}>
+            <LanguageImage src={spainFlag} /> {languageText.titles.spanish}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.japanese)}>
+            <LanguageImage src={japanFlag} /> {languageText.titles.japanese}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.ukrainian)}>
+            <LanguageImage src={ukrainFlag} /> {languageText.titles.ukrainian}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.german)}>
+            <LanguageImage src={germanFlag} /> {languageText.titles.german}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.french)}>
+            <LanguageImage src={franceFlag} /> {languageText.titles.french}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.russian)}>
+            <LanguageImage src={russiaFlag} /> {languageText.titles.russian}</LanguageItems>
+          <LanguageItems onClick={() => setLanguageText(language.chinese)}>
+            <LanguageImage src={chinaFlag} /> {languageText.titles.chinese}</LanguageItems>
+        </NavbarDropdownMenu>
+      </NavbarDropdownButton>
+    </NavbarLinks >
   );
 };
