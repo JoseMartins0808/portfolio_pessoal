@@ -2,8 +2,10 @@ import { Ref, useContext, useState } from "react";
 import {
     ClosingModal, ModalContainer, ModalHeader, ModalWrapper,
     modalCloseAnimation, modalCloseToRightAnimation,
-    modalCloseToLeftAnimation,
-    NextModalButton
+    modalCloseToLeftAnimation, modalOpenAnimation,
+    NextModalButton,
+    ModalFooter,
+    PreviousModalButton
 } from "./style";
 import { AppContext } from "../../providers/appProvider";
 import { stackData } from "../../utils/stackData";
@@ -22,26 +24,28 @@ export const StackModal = ({ setModalStack, stackNumber }: iStackModal) => {
 
     const [stackNum, setStackNum] = useState(stackNumber);
     const [dataStack, setDataStack] = useState(stackData[stackNum]);
-    const [closeModalAnimation, setCloseModalAnimation] = useState("none");
+    const [closeModalAnimation, setCloseModalAnimation] = useState(`${modalOpenAnimation} .5s ease`);
     const [nextModal, setNextModal] = useState("none");
 
     const modalRef = useOutClick(handleCloseModal);
 
     function previousStack() {
-        setStackNum(stackNum - 1);
-        setDataStack(stackData[stackNum - 1]);
+
         setNextModal(`${modalCloseToLeftAnimation} .5s ease`);
         setTimeout(() => {
-            setNextModal("none");
+            setStackNum(stackNum - 1);
+            setDataStack(stackData[stackNum - 1]);
+            setNextModal(`${modalOpenAnimation} .2s ease`);
         }, 400);
     }
 
     function nextStack() {
-        setStackNum(stackNum + 1);
-        setDataStack(stackData[stackNum + 1]);
+
         setNextModal(`${modalCloseToRightAnimation} .5s ease`);
         setTimeout(() => {
-            setNextModal("none");
+            setStackNum(stackNum + 1);
+            setDataStack(stackData[stackNum + 1]);
+            setNextModal(`${modalOpenAnimation} .2s ease`);
         }, 300)
     }
 
@@ -64,11 +68,16 @@ export const StackModal = ({ setModalStack, stackNumber }: iStackModal) => {
                 )}
             </ModalHeader>
             <p className="text">{languageText.stacksDescription[dataStack.stack].description}</p>
-            <span style={{ textDecoration: "underline", marginRight: "5px" }}>
-                {languageText.stacksDescription.footerMessage}</span>
-            <a href={dataStack.link} target="_blank">{dataStack.link}</a>
-            {stackNum > 0 && <p onClick={previousStack}><GrFormPrevious /></p>}
-            {stackNum < stackData.length - 1 && <NextModalButton onClick={nextStack}><GrFormNext size={25} /></NextModalButton>}
+            <ModalFooter>
+                <span>{languageText.stacksDescription.footerMessage}</span>
+                <a href={dataStack.link} target="_blank">{dataStack.link}</a>
+            </ModalFooter>
+            {stackNum > 0 &&
+                <PreviousModalButton onClick={previousStack}><GrFormPrevious size={50} />
+                </PreviousModalButton>}
+            {stackNum < stackData.length - 1 &&
+                <NextModalButton onClick={nextStack}><GrFormNext size={50} />
+                </NextModalButton>}
         </ModalContainer>
     </ModalWrapper>
 }
