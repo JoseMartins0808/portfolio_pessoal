@@ -19,7 +19,7 @@ export const language = {
         apresentationButtons: ["Projetos", "Tecnologias"],
         stacksTitle: "Ferramentas que domino (clique para saber mais)",
         stacksDescription: {
-            footerMessage: "Página web: ",
+            footerMessage: "Página web:",
             html: {
                 description: "HTML (HyperText Markup Language) é o bloco de construção mais básico da Web. Ele define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML são geralmente usadas para descrever a aparência/apresentação (CSS) ou funcionalidade/comportamento (JavaScript) de uma página da web.",
             },
@@ -132,7 +132,7 @@ export const language = {
         apresentationButtons: ["Projects", "Technologies"],
         stacksTitle: "Tools I master (click to find out more)",
         stacksDescription: {
-            footerMessage: "Web page: ",
+            footerMessage: "Web page:",
             html: {
                 description: "HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript)."
             },
@@ -245,7 +245,7 @@ export const language = {
         apresentationButtons: ["Proyectos", "Tecnologías"],
         stacksTitle: "Herramientas que domino (haga clic para obtener más información)",
         stacksDescription: {
-            footerMessage: "Página web: ",
+            footerMessage: "Página web:",
             html: {
                 description: "HTML (lenguaje de marcado de hipertexto) es el bloque de construcción más básico de la Web. Define el significado y la estructura del contenido web. Otras tecnologías además de HTML se utilizan generalmente para describir la apariencia/presentación (CSS) o la funcionalidad/comportamiento (JavaScript) de una página web."
             },
@@ -358,7 +358,7 @@ export const language = {
         apresentationButtons: ["プロジェクト", "テクノロジー"],
         stacksTitle: "私がマスターしているツール (クリックして詳細を確認)",
         stacksDescription: {
-            footerMessage: "ウェブページ: ",
+            footerMessage: "ウェブページ:",
             html: {
                 description: "HTML (HyperText Markup Language) は、Web の最も基本的な構成要素です。 Web コンテンツの意味と構造を定義します。一般に、Web ページの外観/プレゼンテーション (CSS) または機能/動作 (JavaScript) を記述するために、HTML 以外の他のテクノロジが使用されます。"
             },
@@ -471,7 +471,7 @@ export const language = {
         apresentationButtons: ["проекти", "технології"],
         stacksTitle: "Інструменти, якими я володію (натисніть, щоб дізнатися більше)",
         stacksDescription: {
-            footerMessage: "веб-сторінка: ",
+            footerMessage: "веб-сторінка:",
             html: {
                 description: "HTML (мова гіпертекстової розмітки) є основним будівельним блоком Інтернету. Він визначає значення та структуру веб-вмісту. Інші технології, окрім HTML, зазвичай використовуються для опису зовнішнього вигляду/подання веб-сторінки (CSS) або функціональності/поведінки (JavaScript)."
             },
@@ -584,7 +584,7 @@ export const language = {
         apresentationButtons: ["Projekte", "Technologien"],
         stacksTitle: "Werkzeuge, die ich beherrsche (klicken Sie hier, um mehr zu erfahren)",
         stacksDescription: {
-            footerMessage: "Website: ",
+            footerMessage: "Website:",
             html: {
                 description: "HTML (HyperText Markup Language) ist der grundlegendste Baustein des Webs. Es definiert die Bedeutung und Struktur von Webinhalten. Neben HTML werden im Allgemeinen auch andere Technologien verwendet, um das Erscheinungsbild/die Präsentation (CSS) oder die Funktionalität/das Verhalten (JavaScript) einer Webseite zu beschreiben."
             },
@@ -697,7 +697,7 @@ export const language = {
         apresentationButtons: ["Projets", "Les technologies"],
         stacksTitle: "Outils que je maîtrise (cliquez pour en savoir plus)",
         stacksDescription: {
-            footerMessage: "Page web: ",
+            footerMessage: "Page web:",
             html: {
                 description: "HTML (HyperText Markup Language) est l’élément de base du Web. Il définit la signification et la structure du contenu Web. D'autres technologies que HTML sont généralement utilisées pour décrire l'apparence/présentation (CSS) ou la fonctionnalité/comportement (JavaScript) d'une page Web."
             },
@@ -810,7 +810,7 @@ export const language = {
         apresentationButtons: ["Проекты", "Технологии"],
         stacksTitle: "Инструменты, которыми я владею (нажмите, чтобы узнать больше)",
         stacksDescription: {
-            footerMessage: "веб-страница: ",
+            footerMessage: "веб-страница:",
             html: {
                 description: "HTML (язык гипертекстовой разметки) — это самый основной строительный блок Интернета. Он определяет значение и структуру веб-контента. Помимо HTML, для описания внешнего вида/представления веб-страницы (CSS) или функциональности/поведения (JavaScript) обычно используются и другие технологии."
             },
@@ -923,7 +923,7 @@ export const language = {
         apresentationButtons: ["项目", "技术"],
         stacksTitle: "我掌握的工具（点击查看更多）",
         stacksDescription: {
-            footerMessage: "网页: ",
+            footerMessage: "网页:",
             html: {
                 description: "HTML（超文本标记语言）是 Web 最基本的构建块。它定义了网页内容的含义和结构。除 HTML 之外的其他技术通常用于描述网页的外观/表示 (CSS) 或功能/行为 (JavaScript)。"
             },

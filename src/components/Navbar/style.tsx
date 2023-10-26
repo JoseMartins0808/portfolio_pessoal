@@ -11,6 +11,7 @@ export const Navbar = styled("nav", {
   padding: "1rem 0",
   width: "100%",
   zIndex: "99999",
+  boxShadow: "-2px 3px 20px #888",
 
   [`& ${Container}`]: {
     display: "flex",
@@ -37,9 +38,8 @@ export const LogoTipoImage = styled("img", {
 
 export const LogoTipoText = styled("span", {
   fontSize: "1.25rem",
-  fontWeight: 600,
+  fontWeight: 800,
   color: "$grey1",
-  fontFamily: '"IBM Plex Sans"',
   "@mobile": {
     fontSize: "1rem",
   }
@@ -67,7 +67,6 @@ export const NavbarMobileArea = styled("div", {
 });
 
 export const NavbarDropdownMenu = styled("ul", {
-  display: "none",
   position: "absolute",
   top: "40px",
   right: "-4px",
@@ -77,6 +76,10 @@ export const NavbarDropdownMenu = styled("ul", {
   borderRadius: "0.5rem",
   maxWidth: "200px",
   padding: "0 .5rem .5rem .5rem",
+  opacity: "0",
+  transform: "translateY(-333px)",
+  transition: "all ease .5s 200ms",
+  zIndex: "-99999",
 
   "& div": {
     backgroundColor: "$mode",
@@ -84,7 +87,10 @@ export const NavbarDropdownMenu = styled("ul", {
   },
 
   "@mobile": {
-    top: "0"
+    backgroundColor: "$mode",
+    top: "135px",
+    width: "200px",
+    left: "-18px",
   },
 });
 
@@ -107,10 +113,6 @@ export const LanguageImage = styled("img", {
   height: "1rem",
   borderRadius: "20%",
   marginRight: ".5rem"
-  // "@mobile": {
-  //   width: "2.25rem",
-  //   height: "2.25rem",
-  // }
 });
 
 export const NavbarDropdownButton = styled("button", {
@@ -136,41 +138,22 @@ export const NavbarDropdownButton = styled("button", {
         background: "transparent",
         borderColor: "transparent",
       },
-      // primary: {
-      //   background: "$brand1",
-      //   borderColor: "$brand1",
-      //   color: "$whiteFixed",
-      //   "&:hover": {
-      //     backgroundColor: "$brand2",
-      //     borderColor: "$brand2",
-      //   }
-      // },
       icon: {
         borderColor: "$grey5",
         backgroundColor: "transparent",
-
-        // },
-        // circle: {
-        //   borderColor: "$grey5",
-        //   backgroundColor: "$whiteFixed",
-        //   borderRadius: "50%",
-        //   padding: "0",
-        //   width: "2.75rem",
-        //   height: "2.75rem",
-        //   "&:hover": {
-        //     backgroundColor: "$grey5",
-        //   }
-        // }
       }
     },
     ...colors
   },
-  // "&:hover .drop-down": {
-  //   backgroundColor: "Purple"
-  // },
-  // [`&:hover #drops`]: {
+
+  "@mobile": {
+    width: "48%",
+  },
+
   [`&:hover ${NavbarDropdownMenu}`]: {
-    display: "block"
+    transform: "translateY(0)",
+    opacity: "1",
+    zIndex: "-99999"
   },
 });
 
