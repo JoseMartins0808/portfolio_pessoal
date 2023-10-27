@@ -13,7 +13,7 @@ import {
   SiTypescript, SiTailwindcss, SiSass,
   SiNextdotjs, SiExpress, SiNestjs, SiPython, SiDjango,
   SiSpringboot, SiJsonwebtokens, SiPostgresql, SiJest, SiMysql,
-  SiSqlite, SiPrisma, SiHibernate, SiApachemaven
+  SiSqlite, SiPrisma, SiHibernate, SiApachemaven, SiCsharp, SiDotnet
 } from "react-icons/si";
 import { FaDocker, FaJava } from "react-icons/fa";
 import { RxStitchesLogo } from "react-icons/rx";
@@ -60,6 +60,17 @@ export const stackData = [
     title: "TypeScript",
     img: SiTypescript,
     link: "https://www.typescriptlang.org/"
+  },
+  {
+    stack: "cSharp",
+    title: "C Sharp",
+    img: SiCsharp,
+    link: "https://learn.microsoft.com/pt-br/dotnet/csharp/tour-of-csharp/"
+  }, {
+    stack: "aspNet",
+    title: "ASP .NET",
+    img: SiDotnet,
+    link: "https://dotnet.microsoft.com/pt-br/apps/aspnet"
   },
   {
     stack: "docker",

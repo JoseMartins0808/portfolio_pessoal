@@ -109,9 +109,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven é uma ferramenta de gerenciamento e compreensão de projetos de software. Com base no conceito de modelo de objeto de projeto (POM), o Maven pode gerenciar a construção, os relatórios e a documentação de um projeto a partir de uma informação central."
+            },
+            cSharp: {
+                description: "O C# (pronuncia-se C Sharp) é uma linguagem de programação moderna, orientada a objeto e fortemente tipada. O C# permite que os desenvolvedores criem muitos tipos de aplicativos seguros e robustos que são executados no .NET. O C# tem suas raízes na família de linguagens C e os programadores em C, C++, Java e JavaScript a reconhecerão imediatamente. C# é uma linguagem de programação orientada a objetos e orientada a componentes. C# fornece construções de linguagem para dar suporte diretamente a esses conceitos, tornando C# uma linguagem natural para criação e uso de componentes de software."
+            },
+            aspNet: {
+                description: "O .NET é uma plataforma de desenvolvedor composta por ferramentas, linguagens de programação e bibliotecas para criar muitos tipos diferentes de aplicativos. O ASP.NET amplia a plataforma de desenvolvedor do .NET com ferramentas e bibliotecas específicas para a criação de aplicativos web. ASP.NET dá suporte a protocolos de autenticação padrão do setor. Os recursos internos ajudam a proteger seus aplicativos contra cross-site scripting (XSS) e falsificação de solicitação entre sites (CSRF). ASP.NET fornece um banco de dados de usuário integrado com suporte para autenticação multifator e autenticação externa com Google, X e muito mais."
             }
-        }
-
+        },
+        bodyMessage: [
+            "Vamos trocar uma ideia?",
+            "No linkedIn sempre estou compartilhando meus processos diários para desenvolver esses projetos e estou disposto a trocar algumas ideias por lá",
+            "Acessar perfil no LinkedIn"
+        ],
+        footerMessage: ["Portfólio para fins de estudo e apresentação de projetos pessoais.", "Este projeto não tem fins comerciais.", "Versão:"]
     },
     english: {
         title: "Language",
@@ -222,9 +233,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information."
+            },
+            cSharp: {
+                description: "C# (pronounced C Sharp) is a modern, object-oriented, strongly typed programming language. C# allows developers to create many types of secure and robust applications that run on .NET. C# has its roots in the C family of languages, and C, C++, Java, and JavaScript programmers will recognize it immediately. C# is an object-oriented and component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language for creating and using software components."
+            },
+            aspNet: {
+                description: ".NET is a developer platform made up of tools, programming languages, and libraries for creating many different types of applications. ASP.NET extends the .NET developer platform with specific tools and libraries for creating web applications. ASP.NET supports industry-standard authentication protocols. Built-in features help protect your applications against cross-site scripting (XSS) and cross-site request forgery (CSRF). ASP.NET provides an integrated user database with support for multi-factor authentication and external authentication with Google, X, and more."
             }
-        }
-
+        },
+        bodyMessage: [
+            "Shall we exchange an idea?",
+            "On LinkedIn I'm always sharing my daily processes to develop these projects and I'm willing to exchange some ideas there",
+            "Access profile on LinkedIn"
+        ],
+        footerMessage: ["Portfolio for study purposes and presentation of personal projects.", "This project is not for commercial purposes.", "Version:"]
     },
     spanish: {
         title: "Idioma",
@@ -335,9 +357,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven es una herramienta de comprensión y gestión de proyectos de software. Basado en el concepto de modelo de objetos de proyecto (POM), Maven puede gestionar la construcción, los informes y la documentación de un proyecto desde una pieza de información central."
+            },
+            cSharp: {
+                description: "C# (pronunciado C Sharp) es un lenguaje de programación moderno, fuertemente tipado y orientado a objetos. C# permite a los desarrolladores crear muchos tipos de aplicaciones seguras y sólidas que se ejecutan en .NET. C# tiene sus raíces en la familia de lenguajes C y los programadores de C, C++, Java y JavaScript lo reconocerán de inmediato. C# es un lenguaje de programación orientado a objetos y componentes. C# proporciona construcciones de lenguaje para respaldar directamente estos conceptos, lo que convierte a C# en un lenguaje natural para crear y utilizar componentes de software."
+            },
+            aspNet: {
+                description: ".NET es una plataforma de desarrollo compuesta por herramientas, lenguajes de programación y bibliotecas para crear muchos tipos diferentes de aplicaciones. ASP.NET amplía la plataforma de desarrollador .NET con herramientas y bibliotecas específicas para crear aplicaciones web. ASP.NET admite protocolos de autenticación estándar de la industria. Las funciones integradas ayudan a proteger sus aplicaciones contra secuencias de comandos entre sitios (XSS) y falsificación de solicitudes entre sitios (CSRF). ASP.NET proporciona una base de datos de usuarios integrada compatible con autenticación multifactor y autenticación externa con Google, X y más."
             }
-        }
-
+        },
+        bodyMessage: [
+            "¿Intercambiamos una idea?",
+            "En LinkedIn siempre estoy compartiendo mis procesos diarios para desarrollar estos proyectos y estoy dispuesto a intercambiar algunas ideas allí.",
+            "Acceder al perfil en LinkedIn"
+        ],
+        footerMessage: ["Portafolio para fines de estudio y presentación de proyectos personales.", "Este proyecto no tiene fines comerciales.", "Versión:"]
     },
     japanese: {
         title: "言語",
@@ -448,9 +481,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven は、ソフトウェア プロジェクトの管理および理解ツールです。プロジェクト オブジェクト モデル (POM) の概念に基づいて、Maven はプロジェクトのビルド、レポート、ドキュメントを中心的な情報から管理できます。"
+            },
+            cSharp: {
+                description: "C# (C シャープと発音) は、最新のオブジェクト指向の厳密に型指定されたプログラミング言語です。 C# を使用すると、開発者は .NET 上で実行されるさまざまな種類の安全で堅牢なアプリケーションを作成できます。 C# は C ファミリの言語にルーツがあり、C、C++、Java、JavaScript のプログラマーはすぐにそれを認識します。 C# は、オブジェクト指向およびコンポーネント指向のプログラミング言語です。 C# はこれらの概念を直接サポートする言語構造を提供し、C# をソフトウェア コンポーネントを作成および使用するための自然言語にしています。"
+            },
+            aspNet: {
+                description: ".NET は、さまざまな種類のアプリケーションを作成するためのツール、プログラミング言語、およびライブラリで構成される開発者プラットフォームです。 ASP.NET は、Web アプリケーションを作成するための特定のツールとライブラリを使用して .NET 開発者プラットフォームを拡張します。 ASP.NET は、業界標準の認証プロトコルをサポートしています。組み込み機能は、クロスサイト スクリプティング (XSS) やクロスサイト リクエスト フォージェリ (CSRF) からアプリケーションを保護するのに役立ちます。 ASP.NET は、多要素認証と Google、X などによる外部認証をサポートする統合ユーザー データベースを提供します。"
             }
-        }
-
+        },
+        bodyMessage: [
+            "アイデアを交換しましょうか?",
+            "LinkedIn では、これらのプロジェクトを開発するための日々のプロセスを常に共有しており、そこでアイデアを交換するつもりです。",
+            "LinkedIn のプロフィールにアクセスする"
+        ],
+        footerMessage: ["研究目的および個人プロジェクトのプレゼンテーション用のポートフォリオ。", "このプロジェクトは営利目的ではありません。", "バージョン："]
     },
     ukrainian: {
         title: "Мова",
@@ -561,9 +605,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven — це програмний інструмент для керування та розуміння проектів. Базуючись на концепції об’єктної моделі проекту (POM), Maven може керувати збіркою проекту, звітністю та документацією з центральної частини інформації."
+            },
+            cSharp: {
+                description: "C# (вимовляється C Sharp) — це сучасна об’єктно-орієнтована мова програмування зі строгою типізацією. C# дозволяє розробникам створювати багато типів безпечних і надійних програм, які працюють у .NET. C# сягає корінням у сімейство мов C, і програмісти C, C++, Java та JavaScript одразу розпізнають його. C# — об'єктно-орієнтована та компонентно-орієнтована мова програмування. C# надає мовні конструкції для безпосередньої підтримки цих концепцій, роблячи C# природною мовою для створення та використання програмних компонентів."
+            },
+            aspNet: {
+                description: ".NET — це платформа для розробників, що складається з інструментів, мов програмування та бібліотек для створення різноманітних типів програм. ASP.NET розширює платформу розробника .NET спеціальними інструментами та бібліотеками для створення веб-додатків. ASP.NET підтримує стандартні протоколи автентифікації. Вбудовані функції допомагають захистити ваші програми від міжсайтових сценаріїв (XSS) і підробки міжсайтових запитів (CSRF). ASP.NET надає інтегровану базу даних користувачів із підтримкою багатофакторної автентифікації та зовнішньої автентифікації за допомогою Google, X тощо."
             }
-        }
-
+        },
+        bodyMessage: [
+            "Може, обміняємося ідеєю?",
+            "У LinkedIn я завжди ділюся своїми щоденними процесами розробки цих проектів і готовий обмінятися там деякими ідеями",
+            "Доступ до профілю на LinkedIn"
+        ],
+        footerMessage: ["Портфоліо для навчання та презентації особистих проектів.", "Цей проект не призначений для комерційних цілей.", "Версія:"]
     },
     german: {
         title: "Sprache",
@@ -674,9 +729,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven ist ein Software-Projektmanagement- und Verständnistool. Basierend auf dem Konzept eines Projektobjektmodells (POM) kann Maven die Erstellung, Berichterstattung und Dokumentation eines Projekts von einer zentralen Informationseinheit aus verwalten."
+            },
+            cSharp: {
+                description: "C# (ausgesprochen C Sharp) ist eine moderne, objektorientierte, stark typisierte Programmiersprache. Mit C# können Entwickler viele Arten sicherer und robuster Anwendungen erstellen, die unter .NET ausgeführt werden. C# hat seine Wurzeln in der C-Sprachfamilie und C-, C++-, Java- und JavaScript-Programmierer werden es sofort erkennen. C# ist eine objektorientierte und komponentenorientierte Programmiersprache. C# stellt Sprachkonstrukte zur direkten Unterstützung dieser Konzepte bereit und macht C# zu einer natürlichen Sprache für die Erstellung und Verwendung von Softwarekomponenten."
+            },
+            aspNet: {
+                description: ".NET ist eine Entwicklerplattform, die aus Tools, Programmiersprachen und Bibliotheken zum Erstellen vieler verschiedener Arten von Anwendungen besteht. ASP.NET erweitert die .NET-Entwicklerplattform um spezifische Tools und Bibliotheken zum Erstellen von Webanwendungen. ASP.NET unterstützt branchenübliche Authentifizierungsprotokolle. Integrierte Funktionen schützen Ihre Anwendungen vor Cross-Site-Scripting (XSS) und Cross-Site-Request-Forgery (CSRF). ASP.NET bietet eine integrierte Benutzerdatenbank mit Unterstützung für Multi-Faktor-Authentifizierung und externe Authentifizierung mit Google, X und mehr."
             }
-        }
-
+        },
+        bodyMessage: [
+            "Sollen wir eine Idee austauschen?",
+            "Auf LinkedIn teile ich immer meine täglichen Prozesse zur Entwicklung dieser Projekte und bin bereit, dort einige Ideen auszutauschen",
+            "Zugangsprofil auf LinkedIn"
+        ],
+        footerMessage: ["Portfolio für Studienzwecke und Präsentation persönlicher Projekte.", "Dieses Projekt dient nicht kommerziellen Zwecken.", "Ausführung:"]
     },
     french: {
         title: "Langue",
@@ -787,9 +853,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven est un outil de gestion et de compréhension de projets logiciels. Basé sur le concept de modèle objet de projet (POM), Maven peut gérer la construction, le reporting et la documentation d'un projet à partir d'une information centrale."
+            },
+            cSharp: {
+                description: "C# (prononcé C Sharp) est un langage de programmation moderne, orienté objet et fortement typé. C# permet aux développeurs de créer de nombreux types d'applications sécurisées et robustes qui s'exécutent sur .NET. C# a ses racines dans la famille des langages C et les programmeurs C, C++, Java et JavaScript le reconnaîtront immédiatement. C# est un langage de programmation orienté objet et orienté composants. C# fournit des constructions de langage pour prendre directement en charge ces concepts, faisant de C# un langage naturel pour la création et l'utilisation de composants logiciels."
+            },
+            aspNet: {
+                description: ".NET est une plate-forme de développement composée d'outils, de langages de programmation et de bibliothèques permettant de créer de nombreux types d'applications différents. ASP.NET étend la plateforme de développement .NET avec des outils et des bibliothèques spécifiques pour créer des applications Web. ASP.NET prend en charge les protocoles d'authentification standard du secteur. Les fonctionnalités intégrées aident à protéger vos applications contre les scripts intersites (XSS) et la falsification de requêtes intersites (CSRF). ASP.NET fournit une base de données d'utilisateurs intégrée prenant en charge l'authentification multifacteur et l'authentification externe avec Google, X, etc."
             }
-        }
-
+        },
+        bodyMessage: [
+            "Devons-nous échanger une idée?",
+            "Sur LinkedIn, je partage toujours mes processus quotidiens pour développer ces projets et je suis prêt à y échanger quelques idées.",
+            "Accéder au profil sur LinkedIn"
+        ],
+        footerMessage: ["Portfolio à des fins d'études et de présentation de projets personnels.", "Ce projet n'est pas à des fins commerciales.", "Version:"]
     },
     russian: {
         title: "Язык",
@@ -900,9 +977,20 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven — это инструмент управления и анализа программных проектов. Основываясь на концепции объектной модели проекта (POM), Maven может управлять сборкой проекта, отчетами и документацией из центральной части информации."
+            },
+            cSharp: {
+                description: "C# (произносится как C Sharp) — современный объектно-ориентированный строго типизированный язык программирования. C# позволяет разработчикам создавать множество типов безопасных и надежных приложений, работающих на .NET. C# уходит своими корнями в семейство языков C, и программисты C, C++, Java и JavaScript сразу его узнают. C# — это объектно-ориентированный и компонентно-ориентированный язык программирования. C# предоставляет языковые конструкции для непосредственной поддержки этих концепций, что делает C# естественным языком для создания и использования программных компонентов."
+            },
+            aspNet: {
+                description: ".NET — это платформа для разработчиков, состоящая из инструментов, языков программирования и библиотек для создания множества различных типов приложений. ASP.NET расширяет платформу разработки .NET специальными инструментами и библиотеками для создания веб-приложений. ASP.NET поддерживает стандартные протоколы аутентификации. Встроенные функции помогают защитить ваши приложения от межсайтового скриптинга (XSS) и подделки межсайтовых запросов (CSRF). ASP.NET предоставляет интегрированную базу данных пользователей с поддержкой многофакторной аутентификации и внешней аутентификации с помощью Google, X и т. д."
             }
-        }
-
+        },
+        bodyMessage: [
+            "Обменяемся идеей?",
+            "В LinkedIn я всегда делюсь своими ежедневными процессами разработки этих проектов и готов обменяться там некоторыми идеями.",
+            "Доступ к профилю в LinkedIn"
+        ],
+        footerMessage: ["Портфолио для учебных целей и презентации личных проектов.", "Этот проект не преследует коммерческих целей.", "Версия:"]
     },
     chinese: {
         title: "语言",
@@ -1013,8 +1101,19 @@ export const language = {
             },
             maven: {
                 description: "Apache Maven 是一个软件项目管理和理解工具。基于项目对象模型 (POM) 的概念，Maven 可以通过中央信息来管理项目的构建、报告和文档。"
+            },
+            cSharp: {
+                description: "C#（发音为 C Sharp）是一种现代的、面向对象的强类型编程语言。 C# 允许开发人员创建在 .NET 上运行的多种类型的安全且强大的应用程序。 C# 起源于 C 语言家族，C、C++、Java 和 JavaScript 程序员会立即认出它。 C# 是一种面向对象和面向组件的编程语言。 C# 提供了直接支持这些概念的语言结构，使 C# 成为创建和使用软件组件的自然语言。"
+            },
+            aspNet: {
+                description: ".NET 是一个由工具、编程语言和库组成的开发人员平台，用于创建许多不同类型的应用程序。 ASP.NET 通过用于创建 Web 应用程序的特定工具和库扩展了 .NET 开发人员平台。 ASP.NET 支持行业标准身份验证协议。内置功能有助于保护您的应用程序免受跨站点脚本攻击 (XSS) 和跨站点请求伪造 (CSRF) 的侵害。 ASP.NET 提供集成的用户数据库，支持多重身份验证以及 Google、X 等外部身份验证。"
             }
-        }
-
+        },
+        bodyMessage: [
+            "我们交换一下想法好吗？",
+            "在 LinkedIn 上，我总是分享我开发这些项目的日常流程，并且我愿意在那里交流一些想法",
+            "访问 LinkedIn 上的个人资料"
+        ],
+        footerMessage: ["用于学习目的和个人项目展示的作品集。", "本项目不用于商业目的。", "版本："]
     }
 }
