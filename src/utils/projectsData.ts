@@ -87,7 +87,7 @@ export const projects = [
         title: "Controle de Contratos",
         description: "Uma API em Java e Spring Boot, onde é possível criar usuário e conta, realizar depósito em conta, e transferir valores entre contas.",
         language: "C Sharp",
-        gitLink: "",
+        gitLink: "https://github.com/JoseMartins0808/Contract_control_csharp",
         deployLink: null,
         linkedIn: null,
         stacks: [
