@@ -1,6 +1,7 @@
-// there is 9 languages: portuguese, english, spanish, japanese, ukrainian, german, français, russian, chinese.
+// there is 9 languages: portuguese, english, spanish, japanese, ukrainian, german, french, russian, chinese.
 export const language = {
     portuguese: {
+        language: "portuguese",
         title: "Idioma",
         titles: {
             portuguese: "português",
@@ -122,9 +123,57 @@ export const language = {
             "No linkedIn sempre estou compartilhando meus processos diários para desenvolver esses projetos e estou disposto a trocar algumas ideias por lá",
             "Acessar perfil no LinkedIn"
         ],
+        projects: [
+            {
+                title: "Shop Cars",
+                description: "Um site de anúncios de veículos a nível profissional, onde em cada anúncio é possível inserir múltiplas imagens, comentários, dados do veículo e anunciante, contato ao anunciante via WhatsApp, e disparo de e-mails automáticos de acordo com a regra de negócio.",
+                text: ""
+            },
+            {
+                title: "Controle de Contratos",
+                description: "Uma API em Java e Spring Boot, onde é possível criar usuário e conta, realizar depósito em conta, e transferir valores entre contas.",
+                text: ""
+            },
+            {
+                title: "Controle de Finanças",
+                description: "Uma API em C# e Asp .NET, onde é possível cadastrar pessoas e contratos, modificar contratos e excluir os mesmos.",
+                text: ""
+            },
+            {
+                title: "Gerenciamento de Biblioteca",
+                description: "Um projeto em grupo, onde criamos uma API Rest de uma biblioteca. Cadastra-se livros e podemos adicionar comentários ao livro. Cadastra-se cópias, e podemos reservar cópias para empréstimos, com data de devolução. Há também disparo de e-mail avisando da data da devolução, e bloqueio de usuário.",
+                text: ""
+            },
+            {
+                title: "Lista de Tarefas",
+                description: "Uma API em Java, onde é possível cadastrar usuários e suas respectivas tarefas, por descrição e prioridade.",
+                text: "",
+            },
+            {
+                title: "Rick and Morty",
+                description: "Uma página web que consome a API do Rick and Morty, renderizando os personagens de acordo com o avanço das páginas.",
+                text: "",
+            },
+            {
+                title: "Music Player",
+                description: "Um projeto Full Stack criado em Next Js(frontend) e Nest Js(backend), onde é possível cadastrar músicas e ouví-las no player.",
+                text: "",
+            },
+            {
+                title: "Portfólio Pessoal",
+                description: "A web page com meus principais projetos, criado em React Js, com modais de apresentação de stacks, e aporte de 9 idiomas diferentes.",
+                text: "",
+            },
+            {
+                title: "Loja da Tecnologia",
+                description: "Um projeto full stack onde apresenta uma loja virtual para aquisição de itens eletrônicos. É possível fazer login na loja através de uma conta Google.",
+                text: "",
+            }
+        ],
         footerMessage: ["Portfólio para fins de estudo e apresentação de projetos pessoais.", "Este projeto não tem fins comerciais.", "Versão:"]
     },
     english: {
+        language: "english",
         title: "Language",
         titles: {
             portuguese: "portuguese",
@@ -241,6 +290,53 @@ export const language = {
                 description: ".NET is a developer platform made up of tools, programming languages, and libraries for creating many different types of applications. ASP.NET extends the .NET developer platform with specific tools and libraries for creating web applications. ASP.NET supports industry-standard authentication protocols. Built-in features help protect your applications against cross-site scripting (XSS) and cross-site request forgery (CSRF). ASP.NET provides an integrated user database with support for multi-factor authentication and external authentication with Google, X, and more."
             }
         },
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+        ],
         bodyMessage: [
             "Shall we exchange an idea?",
             "On LinkedIn I'm always sharing my daily processes to develop these projects and I'm willing to exchange some ideas there",
@@ -249,6 +345,7 @@ export const language = {
         footerMessage: ["Portfolio for study purposes and presentation of personal projects.", "This project is not for commercial purposes.", "Version:"]
     },
     spanish: {
+        language: "spanish",
         title: "Idioma",
         titles: {
             portuguese: "portugués",
@@ -370,9 +467,57 @@ export const language = {
             "En LinkedIn siempre estoy compartiendo mis procesos diarios para desarrollar estos proyectos y estoy dispuesto a intercambiar algunas ideas allí.",
             "Acceder al perfil en LinkedIn"
         ],
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+        ],
         footerMessage: ["Portafolio para fines de estudio y presentación de proyectos personales.", "Este proyecto no tiene fines comerciales.", "Versión:"]
     },
     japanese: {
+        language: "japanese",
         title: "言語",
         titles: {
             portuguese: "ポルトガル語",
@@ -494,9 +639,57 @@ export const language = {
             "LinkedIn では、これらのプロジェクトを開発するための日々のプロセスを常に共有しており、そこでアイデアを交換するつもりです。",
             "LinkedIn のプロフィールにアクセスする"
         ],
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+        ],
         footerMessage: ["研究目的および個人プロジェクトのプレゼンテーション用のポートフォリオ。", "このプロジェクトは営利目的ではありません。", "バージョン："]
     },
     ukrainian: {
+        language: "ukrainian",
         title: "Мова",
         titles: {
             portuguese: "португальська",
@@ -618,9 +811,57 @@ export const language = {
             "У LinkedIn я завжди ділюся своїми щоденними процесами розробки цих проектів і готовий обмінятися там деякими ідеями",
             "Доступ до профілю на LinkedIn"
         ],
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+        ],
         footerMessage: ["Портфоліо для навчання та презентації особистих проектів.", "Цей проект не призначений для комерційних цілей.", "Версія:"]
     },
     german: {
+        language: "german",
         title: "Sprache",
         titles: {
             portuguese: "portugiesisch",
@@ -742,9 +983,57 @@ export const language = {
             "Auf LinkedIn teile ich immer meine täglichen Prozesse zur Entwicklung dieser Projekte und bin bereit, dort einige Ideen auszutauschen",
             "Zugangsprofil auf LinkedIn"
         ],
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+        ],
         footerMessage: ["Portfolio für Studienzwecke und Präsentation persönlicher Projekte.", "Dieses Projekt dient nicht kommerziellen Zwecken.", "Ausführung:"]
     },
     french: {
+        language: "french",
         title: "Langue",
         titles: {
             portuguese: "portugais",
@@ -866,9 +1155,57 @@ export const language = {
             "Sur LinkedIn, je partage toujours mes processus quotidiens pour développer ces projets et je suis prêt à y échanger quelques idées.",
             "Accéder au profil sur LinkedIn"
         ],
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+        ],
         footerMessage: ["Portfolio à des fins d'études et de présentation de projets personnels.", "Ce projet n'est pas à des fins commerciales.", "Version:"]
     },
     russian: {
+        language: "russian",
         title: "Язык",
         titles: {
             portuguese: "португальский",
@@ -990,9 +1327,57 @@ export const language = {
             "В LinkedIn я всегда делюсь своими ежедневными процессами разработки этих проектов и готов обменяться там некоторыми идеями.",
             "Доступ к профилю в LinkedIn"
         ],
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+        ],
         footerMessage: ["Портфолио для учебных целей и презентации личных проектов.", "Этот проект не преследует коммерческих целей.", "Версия:"]
     },
     chinese: {
+        language: "chinese",
         title: "语言",
         titles: {
             portuguese: "葡萄牙语",
@@ -1113,6 +1498,53 @@ export const language = {
             "我们交换一下想法好吗？",
             "在 LinkedIn 上，我总是分享我开发这些项目的日常流程，并且我愿意在那里交流一些想法",
             "访问 LinkedIn 上的个人资料"
+        ],
+        projects: [
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
+            {
+                title: "",
+                description: "",
+                text: "",
+            },
         ],
         footerMessage: ["用于学习目的和个人项目展示的作品集。", "本项目不用于商业目的。", "版本："]
     }

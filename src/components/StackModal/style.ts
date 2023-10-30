@@ -24,7 +24,7 @@ export const ModalContainer = styled("div", {
     height: "500px",
     maxHeight: "500px",
     borderRadius: "5px",
-    padding: "3rem 2rem",
+    padding: "2rem",
     position: "relative",
     maxWidth: "600px",
 
@@ -64,15 +64,15 @@ export const ModalFooter = styled("div", {
 });
 
 export const ClosingModal = styled("span", {
+    paddingTop: "5px",
     position: "absolute",
-    top: "5px",
-    right: "5px",
+    top: "2rem",
+    right: "2rem",
     fontWeight: "normal",
-    border: "2px solid $grey1",
     borderRadius: "20%",
     textAlign: "center",
-    height: "25px",
-    width: "25px",
+    height: "2rem",
+    width: "2rem",
     cursor: "pointer",
     transition: "ease .2s",
 

@@ -51,7 +51,7 @@ export const stackData = [
   },
   {
     stack: "react",
-    title: "React",
+    title: "React Js",
     img: imgReact,
     link: "https://react.dev/"
   },

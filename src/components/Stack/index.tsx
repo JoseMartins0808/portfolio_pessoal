@@ -19,9 +19,9 @@ export const Stack = (
     <StackCard key={key} onClick={() => setModalStack(true)}>
       <Text>{title}</Text>
       {isString ? (
-        <img src={Icon} alt={title} title={title} height="84px" width="84px" />
+        <img src={Icon} alt={title} title={title} height="50px" width="50px" />
       ) : (
-        <Icon size={84} />
+        <Icon size={50} />
       )}
     </StackCard>
   );

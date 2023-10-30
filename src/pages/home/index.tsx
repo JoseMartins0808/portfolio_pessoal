@@ -27,12 +27,14 @@ import {
 import { useContext, useState } from "react";
 import { AppContext } from "./../../providers/appProvider";
 import { StackModal } from "@/components/StackModal";
+import useMedia from "use-media";
 
 export const Home = (): JSX.Element => {
 
   const { languageText } = useContext(AppContext);
   const [modalStack, setModalStack] = useState<boolean>(false);
   const [stackNumber, SetStackNumber] = useState<number | null>(null);
+  const isWide = useMedia({ maxWidth: "991px" });
 
   return (
     <main>
@@ -58,15 +60,15 @@ export const Home = (): JSX.Element => {
       </Header>
       <StackSection id="tecnologias">
         <Container>
-          <Text as="h4" type="heading3" color="grey1">
+          <Text as="h3" type={isWide ? "heading3" : "heading2"} color="grey1">
             {languageText.stacksTitle}
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (
-              <div onClick={() => SetStackNumber(index)} key={"stack" + index} >
+              <li onClick={() => SetStackNumber(index)} key={"stack" + index} >
                 <Stack title={stack.title} icon={stack.img}
                   setModalStack={setModalStack} key={index} />
-              </div>
+              </li>
             ))}
             {modalStack && <StackModal setModalStack={setModalStack} stackNumber={stackNumber!} />}
           </StackCards>
@@ -92,7 +94,7 @@ export const Home = (): JSX.Element => {
               </Button>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
-              <Text type="body1" color="grey2" css={{ marginBottom: "$2" }}>
+              <Text type="heading3" color="grey2" css={{ marginBottom: "$2" }}>
                 {languageText.apresentationButtons[0]}
               </Text>
               <Project />

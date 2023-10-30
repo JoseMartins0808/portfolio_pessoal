@@ -81,14 +81,29 @@ export const NavBar = (): JSX.Element => {
 
 export const NavLinks = (): JSX.Element => {
 
-  // const [openLanguageMenu, setOpenLanguageMenu] = useState(false);
   const { languageText, setLanguageText } = useContext(AppContext);
 
-  // const menuDropdownRef = useOutClick(() => setOpenLanguageMenu(false));
-
-  // function toggleLanguageMenu() {
-  //   setOpenLanguageMenu(!openLanguageMenu);
-  // }
+  function changeLanguageFlags() {
+    if (languageText.language === "portuguese") {
+      return brazilFlag;
+    } else if (languageText.language === "english") {
+      return usaFlag;
+    } else if (languageText.language === "spanish") {
+      return spainFlag;
+    } else if (languageText.language === "japanese") {
+      return japanFlag;
+    } else if (languageText.language === "ukrainian") {
+      return ukrainFlag;
+    } else if (languageText.language === "german") {
+      return germanFlag;
+    } else if (languageText.language === "french") {
+      return franceFlag;
+    } else if (languageText.language === "russian") {
+      return russiaFlag;
+    } else if (languageText.language === "chinese") {
+      return chinaFlag;
+    }
+  }
 
   return (
     <NavbarLinks>
@@ -128,7 +143,7 @@ export const NavLinks = (): JSX.Element => {
       )}
       <NavbarDropdownButton type="icon" aria-label="language"
       // onClick={toggleLanguageMenu}
-      >{languageText.title}
+      ><LanguageImage src={changeLanguageFlags()} />  {languageText.title}
         <NavbarDropdownMenu  >
           <div />
           <LanguageItems onClick={() => setLanguageText(language.portuguese)}>
