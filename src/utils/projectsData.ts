@@ -85,8 +85,8 @@ export const projects = [
     },
     {
         title: "Controle de Contratos",
-        description: "Uma API em Java e Spring Boot, onde é possível criar usuário e conta, realizar depósito em conta, e transferir valores entre contas.",
         language: "C Sharp",
+        description: "Uma API em C# e Asp .NET, onde é possível cadastrar pessoas e contratos, modificar contratos e excluir os mesmos.",
         gitLink: "https://github.com/JoseMartins0808/Contract_control_csharp",
         deployLink: null,
         linkedIn: null,
@@ -104,7 +104,7 @@ export const projects = [
     },
     {
         title: "Controle de Finanças",
-        description: "Uma API em C# e Asp .NET, onde é possível cadastrar pessoas e contratos, modificar contratos e excluir os mesmos.",
+        description: "Uma API em Java e Spring Boot, onde é possível criar usuário e conta, realizar depósito em conta, e transferir valores entre contas.",
         language: "Java",
         gitLink: "https://github.com/JoseMartins0808/Java_API_Financial_Control",
         deployLink: null,
