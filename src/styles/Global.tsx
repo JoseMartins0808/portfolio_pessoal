@@ -1,5 +1,5 @@
 import { createTheme, globalCss, styled } from "@stitches/react";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 interface GlobalStyleProps {
   children: ReactNode;
@@ -47,20 +47,10 @@ export const colors = {
   },
 };
 
-export const globalStyles = globalCss({
-  "*": {
-    margin: 0,
-    padding: 0,
-    fontFamily: "'Inter', sans-serif",
-    boxSizing: "border-box",
-  },
-  html: {
-    scrollBehavior: "smooth",
-  },
-  a: { textDecoration: "none" },
-});
-
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
+
+  // const [themeApply, setThemeApply] = useState("theme");
+
   const theme = createTheme({
     colors: {
       brand1: "#5C63ED",
@@ -119,6 +109,8 @@ export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
     },
   });
 
+
+
   globalStyles();
 
   const App = styled("div", {
@@ -127,3 +119,30 @@ export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
 
   return <App className={theme}>{children}</App>;
 };
+
+export const globalStyles = globalCss({
+  "*": {
+    margin: 0,
+    padding: 0,
+    fontFamily: "'Inter', sans-serif",
+    boxSizing: "border-box",
+    scrollbarWidth: "thin",
+    scrollbarColor: "$brand1"
+  },
+  "*::-webkit-scrollbar": {
+    width: "2px",
+    height: "2px"
+  },
+  "*::-webkit-scrollbar-track": {
+    background: "none"
+  },
+  "*::-webkit-scrollbar-thumb": {
+    backgroundColor: "#495057"
+  },
+
+  html: {
+    scrollBehavior: "smooth",
+  },
+  a: { textDecoration: "none" },
+  li: { listStyle: "none" }
+});
