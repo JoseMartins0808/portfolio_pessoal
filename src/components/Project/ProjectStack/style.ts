@@ -3,7 +3,7 @@ import { keyframes } from "@stitches/react";
 import { Text } from "../../../styles/Text";
 
 const scaleUp = keyframes({
-    "0%": { transform: "translateY(15%) rotateX(180deg)" },
+    "0%": { transform: "translateY(15%)" },
     "100%": { transform: "translateY(-140%) rotateX(0)" },
 });
 
@@ -23,13 +23,13 @@ export const StackCard = styled("div", {
     [`& ${Text}`]: {
         opacity: 0,
         position: "absolute",
-        transform: "translateX(-180deg)",
+        transform: "rotateY(90deg)",
         background: "$whiteFixed",
         boxShadow: "drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.12))",
         padding: "0.4rem 1rem",
         borderRadius: "$1",
         textAlign: "center",
-        fontSize: "1rem",
+        fontSize: ".5rem",
         fontWeight: "500",
         whiteSpace: "nowrap",
 
